@@ -1,0 +1,187 @@
+/* Body  */
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #485568, #736586);
+    font-family: 'Arial', sans-serif;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Gestion du header avec les icones  */
+
+.social-icons {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+    transition: transform 0.3s ease-in-out;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.social-icons:hover {
+    transform: translateX(-50%) scale(1.2);
+}
+
+.social-icons {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 30px; 
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.social-icons a img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.8) translateY(10px);
+}
+
+/* Style du container principal  */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.text-container {
+    flex: 1;
+    text-align: left;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+}
+
+/* Fade du texte */
+.gradient-text {
+    background: linear-gradient(90deg, #ff7eb3, #ff758c, #ff7eb3);
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 3s infinite alternate;
+    transition: animation 0.3s ease-in-out;
+}
+
+.gradient-text:hover {
+    animation: gradientMove 1s infinite alternate;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Animation du texte */
+.text-container h1 {
+    font-size: 3rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+.text-container p {
+    font-size: 1.5rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards 0.5s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.sections {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.section {
+    position: relative;
+    padding: 5px 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.section:hover {
+    color: #ff758c;
+}
+
+/* Barre animée */
+.underline {
+    position: absolute;
+    bottom: 5px;
+    height: 3px;
+    width: 60px;
+    background-color: white;
+    transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
+}
