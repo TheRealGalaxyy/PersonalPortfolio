@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/vnd.icon" href="../css/images/dev-icon.png">
+
     <title>Portfolio</title>
+
     <link rel="stylesheet" href="../css/homepage.css">
+    <link rel="stylesheet" href="../css/form.css">
+
 </head>
 <body>
 
-    <!-- Header avec icones -->
+    <!-- Header with icons -->
     <div class="social-icons">
         <a href="https://www.linkedin.com/in/melosso-tom-246292347/" target="_blank">
             <img src="../css/images/linkedin-logo.png" alt="LinkedIn">
@@ -20,13 +24,13 @@
         <a href="#">
             <img src="../css/images/gmail-logo.png" alt="Gmail">
         </a>
-        <a href="../docs/MELOSSO Tom - CV.pdf">
+        <a href="../docs/MELOSSO Tom - CV.pdf" target="_blank">
             <img src="../css/images/cv.png" alt="Gmail">
         </a>
     </div>
 
-    <!-- Container principal -->
-    <div class="container">
+    <!-- Container Home -->
+    <div id="home" class="container">
         <!-- Titre + description -->
         <div class="text-container">
             <h1>
@@ -41,22 +45,46 @@
             </p>
         </div>
 
-        <!-- Image de moi -->
+        <!-- Image of me -->
         <div class="image-container">
             <img src="../css/images/me.png" alt="Me">
+        </div>
+    </div>
+
+    <div id="experience" class="container hidden">
+        experience
+    </div>
+
+    <div id="projects" class="container hidden">
+        projects
+    </div>
+
+    <div id="contact" class="container hidden">
+        <!-- Titre + description -->
+        <div class="text-container">
+            <h1>
+                <span class="gradient-text">Get in touch !</span>
+            </h1>
+            <p>
+                To contact me, you can use this email :
+                <br><span class="gradient-text">melossotom57@gmail.com</span>
+                <br><br>Or fill up 
+                <span class="gradient-text">the form</span> !
+            </p>
         </div>
     </div>
 
     <!-- Footer -->
     <footer>
         <div class="sections">
-            <span class="section" data-index="0">Home</span>
-            <span class="section" data-index="1">Projects</span>
-            <span class="section" data-index="2">About</span>
-            <span class="section" data-index="3">Contact</span>
+            <span class="section" data-index="home">Home</span>
+            <span class="section" data-index="projects">Projects</span>
+            <span class="section" data-index="experience">Experience</span>
+            <span class="section" data-index="contact">Contact</span>
         </div>
         <div class="underline"></div>
     </footer>
+    
 
     <script src="../js/homepage.js"></script>
 </body>
