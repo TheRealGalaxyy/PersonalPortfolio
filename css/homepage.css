@@ -81,6 +81,7 @@ body {
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid white;
+    animation: fadeInUp 1s forwards;
 }
 
 .image-container img:hover {
