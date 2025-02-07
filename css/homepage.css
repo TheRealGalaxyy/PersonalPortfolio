@@ -191,3 +191,85 @@ footer {
 .hidden {
     display: none;
 }
+
+/* Formulaire de contact */
+
+#contact-form {
+    background: rgba(255, 255, 255, 0.1); 
+    border: 2px solid white;
+    border-radius: 12px;
+    padding: 2rem;
+    width: 50%;
+    max-width: 500px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    margin: 0 auto; 
+    opacity: 0; 
+    animation: fadeInUp 1s ease-out forwards; 
+}
+
+
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 1rem;
+    transition: background 0.3s ease-in-out;
+    margin: 0 auto;
+    display: block;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.form-group textarea {
+    height: 120px;
+    resize: none;  
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.418) !important;
+    opacity: 1;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    background: rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+
+
+.form-group input[type="submit"] {
+    background: linear-gradient(90deg, #ff758c, #ff7eb3);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    width: 100%;
+}
+
+.form-group input[type="submit"]:hover {
+    background: linear-gradient(90deg, #ff7eb3, #ff758c);
+}
+
