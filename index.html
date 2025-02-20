@@ -1,8 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta http-equiv="refresh" content="0;url=/PersonalPortfolio/html/homepage.html">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/vnd.icon" href="css/images/dev-icon.png">
+
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="css/homepageDesktop.css" media="screen and (min-width: 769px)">
+    <link rel="stylesheet" href="css/homepageMobile.css" media="screen and (max-width: 768px)">
+
+
+    <script src="js/homepage.js"></script>
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
 </head>
 <body>
+
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/melosso-tom-246292347/" target="_blank">
+            <img src="css/images/Header/linkedin-logo.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/TheRealGalaxyy" target="_blank">
+            <img src="css/images/Header/github-logo.png" alt="GitHub">
+        </a>
+        <a href="docs/MELOSSO Tom - CV.pdf" target="_blank">
+            <img src="css/images/Header/cv.png" alt="My Cv">
+        </a>
+    </div>
+
+    <div id="home" class="container">
+        <div class="text-container">
+            <h1>
+                Hi! My name is <br> 
+                <span class="gradient-text">Melosso Tom</span>
+            </h1>
+            <p>
+                Currently 
+                <span class="gradient-text">IT Student</span>, 
+                with the ambition of being 
+                <span class="gradient-text">Fullstack Dev</span>
+                or 
+                <span class="gradient-text">Software Dev</span>
+            </p>
+        </div>
+
+        <!-- Image of me -->
+        <div class="image-container">
+            <img src="css/images/Pics/me.png" alt="Me">
+        </div>
+    </div>
+
+    <div id="projects" class="container hidden">
+        <div class="projects-grid">
+            <a href="https://github.com/Orphais/portfolio" class="project-card">
+                <img src="css/images/Projects/Portfolio.png" alt="Projet 1">
+                <h3><span class="gradient-text">Interactive Portfolio</span></h3>
+                <p>A proprietary website made for artists who want to exhibit their work</p>
+                <p>Made with : <span class="gradient-text">Symfony</span> && <span class="gradient-text">PHP</span></p>
+            </a>
+            <a href="lien-vers-projet2.html" class="project-card">
+                <img src="css/images/Projects/wip.png" alt="Projet 2">
+                <h3>... Pending ...</h3>
+            </a>
+            <a href="lien-vers-projet3.html" class="project-card">
+                <img src="css/images/Projects/wip.png" alt="Projet 3">
+                <h3>... Pending ...</h3>
+            </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact" class="container hidden">
+        <div class="text-container">
+            <h1>
+                <span class="gradient-text">Get in touch !</span>
+            </h1>
+            <p>
+                To contact me, you can use this email :
+                <br><span class="gradient-text">melossotom57@gmail.com</span>
+                <br><br>Or fill up 
+                <span class="gradient-text">the form</span> !
+            </p>
+        </div>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name"><span class="gradient-text">Name:</span></label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="email"><span class="gradient-text">Email:</span></label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="subject"><span class="gradient-text">Subject:</span></label>
+                <input type="text" id="subject" name="subject" placeholder="The subject of the mail" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="message"><span class="gradient-text">Message:</span></label>
+                <textarea id="message" name="message" placeholder="Your message" required></textarea>
+            </div>
+        
+            <div class="form-group">
+                <input type="submit" value="Send Message">
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="sections">
+            <span class="section" data-index="home">Home</span>
+            <span class="section" data-index="projects">Projects</span>
+            <span class="section" data-index="contact">Contact</span>
+        </div>
+        <div class="underline"></div>
+    </footer>
+
+    <script src="js/contact.js"></script>
 </body>
 </html>
